@@ -9,5 +9,5 @@ var findMaxConsecutiveOnes = function (nums) {
             curr = 0;
         }
     }
-    return Math.max(curr, max);
+    return Math.max(curr, max); // [1,1,0,0,1,1] no zero at end
 };
