@@ -1,4 +1,4 @@
-const n = 3
+const n = 16;
 var isPowerOfTwo = function(n) {
     if(n == 1) {
         return true;
@@ -8,4 +8,4 @@ var isPowerOfTwo = function(n) {
     return isPowerOfTwo(n/2);
 };
 
-console.log(isPowerOfTwo(n))
+console.log(isPowerOfTwo(n));
