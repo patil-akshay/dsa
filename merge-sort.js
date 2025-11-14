@@ -1,3 +1,5 @@
+// n log n
+
 var sortArray = function(arr) {
     if(arr.length <= 1) return arr; // not required to sort
     let mid = Math.floor(arr.length / 2);
