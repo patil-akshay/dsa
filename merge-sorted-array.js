@@ -1,3 +1,8 @@
+const nums1 =[1,3,5,7]
+const nums2 = [2,4,8,9]
+let m = nums1.length;
+let n = nums2.length;
+
 var merge = function (nums1, m, nums2, n) {
     let p1 = m - 1;
     let p2 = n - 1;
@@ -17,3 +22,5 @@ var merge = function (nums1, m, nums2, n) {
     }
     return nums1;
 };
+
+console.log(merge(nums1, m, nums2, n));
