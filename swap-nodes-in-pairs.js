@@ -16,15 +16,15 @@ var swapPairs = function (head) {
     }
 
     // Nodes to be swapped
-    const firstNode = head;
-    const secondNode = head.next;
+    const left = head;
+    const right = head.next;
 
     // Recursive call
-    firstNode.next = swapPairs(secondNode.next);
+    left.next = swapPairs(right.next);
 
     // Complete the swap
-    secondNode.next = firstNode;
+    right.next = left;
 
     // Return the new head
-    return secondNode;
+    return right;
 };
