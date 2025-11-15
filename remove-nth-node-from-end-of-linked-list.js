@@ -36,7 +36,7 @@ var removeNthFromEnd = function (head, n) {
 
 
 
-//optimised one-pass approach
+//optimised one-pass approach Time/Space O(n) / O(1)
 
 var removeNthFromEnd = function (head, n) {
     // add node
