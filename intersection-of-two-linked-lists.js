@@ -13,12 +13,12 @@
  */
 var getIntersectionNode = function (headA, headB) {
     const check = new Set();
-    while (headB && headB.next) {
+    while (headB) {
         check.add(headB);
         headB = headB.next;
     }
 
-    while (headA && headA.next) {
+    while (headA) {
         if (check.has(headA)) {
             return headA;
         }
