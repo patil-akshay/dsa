@@ -5,7 +5,7 @@
 var findPeakElement = function (nums) {
     let left = 0;
     let right = nums.length - 1;
-    while (left < right) {
+    while (left < right) { // breaking condition l==r only on element
         let m = Math.floor((left + right) / 2);
         if (nums[m + 1] > nums[m]) { // peak is on right
             left = m + 1;
