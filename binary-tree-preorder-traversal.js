@@ -25,3 +25,20 @@ var preorderTraversal = function (root) {
     traversal(root);
     return ans;
 };
+
+
+//Using stack
+// Time - Space - O(n)
+
+var preorderTraversal = function (root) {
+    if (!root) return [];
+    const ans = [];
+    let stack = [root];
+    while (stack.length) {
+        let curr = stack.pop();
+        ans.push(curr.val);
+        curr.right && stack.push(curr.right);
+        curr.left && stack.push(curr.left);
+    }
+    return ans;
+};
