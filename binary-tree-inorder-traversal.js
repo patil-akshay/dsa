@@ -23,3 +23,22 @@ var inorderTraversal = function (root) {
     traversal(root);
     return ans;
 };
+
+// Using stack
+var inorderTraversal = function (root) {
+    if (!root) return [];
+    const ans = [];
+    const stack = [];
+    let curr = root;
+    while (curr || stack.length) {
+        while (curr) {
+            stack.push(curr);
+            // leftmost bottom element
+            curr = curr.left;
+        }
+        curr = stack.pop();
+        ans.push(curr.val);
+        curr = curr.right;
+    }
+    return ans;
+};
