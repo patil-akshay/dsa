@@ -1,7 +1,5 @@
 // min heap
 
-// min heap
-
 class MinHeap {
     constructor() { 
         this.heap = [5, 10, 20, 30];
