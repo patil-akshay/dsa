@@ -42,7 +42,7 @@ class MinHeap {
 
 let heap = new MinHeap();
 
-heap.insert(1);
+heap.insert(1); // O(logn)
 
 console.log(heap); // [1, 5, 10, 20, 30]
 
