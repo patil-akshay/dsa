@@ -1,4 +1,4 @@
-// Space O(n) Time - O(nlogn)
+// Space O(1) Time - O(nlogn)
 
 const arr = [1, 4, 10, 5, 3];
 
